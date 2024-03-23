@@ -11,7 +11,7 @@ tags: debug
 
 他是要在显示界面上引入第三方包，于是在js里写的
 
-```
+``` JavaScript
 const FullCalendar = require('@fullcalendar/core');
 const dayGridPlugin = require('@fullcalendar/daygrid');
 ```
@@ -25,8 +25,8 @@ const dayGridPlugin = require('@fullcalendar/daygrid');
 解决：
 
 在main.js创建窗口的时候加入两个新的开头
-```
-	mainWindow = new BrowserWindow({
+``` JavaScript
+mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: { 
@@ -45,7 +45,7 @@ const dayGridPlugin = require('@fullcalendar/daygrid');
 在之前开启隔离的时候，上下文通信是使用`ContextBridge`实现api传递的
 
 例：
-```
+``` JavaScript
 contextBridge.exposeInMainWorld('api_name', {
     sendLoginMessage: () => {
         ipcRenderer.send('LOGIN');
@@ -55,7 +55,7 @@ contextBridge.exposeInMainWorld('api_name', {
 
 ```
 关闭隔离后`ContextBridge`就无法使用了，改为
-```
+``` JavaScript
 window.api_name = {
     sendLoginMessage: () => {
         ipcRenderer.send('LOGIN');
@@ -69,7 +69,7 @@ window.api_name = {
 运行后之前的（垃圾）代码有些属性会说undefined。错误信息`Uncaught TypeError: Cannot read properties of undefined (reading 'email')`
 
 代码：
-```
+``` JavaScript
 var file = {
   id: mID.textContent,
   currentEmail: this.email.textContent
@@ -86,7 +86,7 @@ var file = {
 
 查看到不是自己的`main.js`而是要导入的`fullcalendar`的`main.js`，点进去看，错误行：
 
-```
+``` JavaScript
 import './vdom.js';
 ```
 
@@ -100,7 +100,7 @@ import './vdom.js';
 
 同学换了一个使用`jQeury`的calendar module，一切正常但一直报错`Uncaught ReferenceError: jQuery is not defined`，但在Js里已经定义了
 
-```
+``` JavaScript
 window.$ = window.jQuery = require('jquery');
 ```
 
