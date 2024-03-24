@@ -11,7 +11,7 @@ tags: debug
 
 他是要在显示界面上引入第三方包，于是在js里写的
 
-``` JavaScript
+``` javascript
 const FullCalendar = require('@fullcalendar/core');
 const dayGridPlugin = require('@fullcalendar/daygrid');
 ```
@@ -24,8 +24,8 @@ const dayGridPlugin = require('@fullcalendar/daygrid');
 
 解决：
 
-在main.js创建窗口的时候加入两个新的开头
-``` JavaScript
+在main.js创建窗口的时候加入两个新的开关
+``` javascript
 mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -45,7 +45,7 @@ mainWindow = new BrowserWindow({
 在之前开启隔离的时候，上下文通信是使用`ContextBridge`实现api传递的
 
 例：
-``` JavaScript
+``` javascript
 contextBridge.exposeInMainWorld('api_name', {
     sendLoginMessage: () => {
         ipcRenderer.send('LOGIN');
@@ -55,7 +55,7 @@ contextBridge.exposeInMainWorld('api_name', {
 
 ```
 关闭隔离后`ContextBridge`就无法使用了，改为
-``` JavaScript
+``` javascript
 window.api_name = {
     sendLoginMessage: () => {
         ipcRenderer.send('LOGIN');
@@ -69,14 +69,23 @@ window.api_name = {
 运行后之前的（垃圾）代码有些属性会说undefined。错误信息`Uncaught TypeError: Cannot read properties of undefined (reading 'email')`
 
 代码：
-``` JavaScript
-var file = {
-  id: mID.textContent,
-  currentEmail: this.email.textContent
+``` javascript
+function isNoteSaved() {
+  var file = {
+    // ...
+    currentEmail: this.email.textContent
+  }
+  // ...
 }
 ```
 
-摸索半天，解决把this去掉（不知道上一组为什么这里要加这个this）
+定义在
+
+```javascript
+const email = document.getElementById("email");
+```
+
+摸索半天，解决把this去掉，应该是与关闭上下文隔离有关。
 
 新问题：
 
@@ -86,7 +95,7 @@ var file = {
 
 查看到不是自己的`main.js`而是要导入的`fullcalendar`的`main.js`，点进去看，错误行：
 
-``` JavaScript
+``` javascript
 import './vdom.js';
 ```
 
@@ -100,7 +109,7 @@ import './vdom.js';
 
 同学换了一个使用`jQeury`的calendar module，一切正常但一直报错`Uncaught ReferenceError: jQuery is not defined`，但在Js里已经定义了
 
-``` JavaScript
+``` javascript
 window.$ = window.jQuery = require('jquery');
 ```
 
