@@ -20,7 +20,7 @@ const dayGridPlugin = require('@fullcalendar/daygrid');
 
 `dashboard.js:1 Uncaught ReferenceError: require is not defined`
 
-疯狂谷歌，发现是因为electron是有两个进程，一个main进程一个renderer进程。默认main进程是使用的Node.js，而rendered进程是无法使用Node的，所以就会出现require无法使用的情况。
+疯狂谷歌，发现是因为electron是有两个进程，一个main进程一个renderer进程。默认main进程是使用的Node.js，而renderer进程是无法使用Node的，所以就会出现require无法使用的情况。
 
 解决：
 
