@@ -948,7 +948,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/ow.JPG
+  banner_img: /img/kingsrow.PNG
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/photo.JPG
