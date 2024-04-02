@@ -42,7 +42,7 @@ A problem that can be solved without communication is called **embarrassingly pa
 However, even under this scenario $E_p$ will always drop for some (large) $p$ due to resource underutilization caused by very little data winded up on each processor.
 
 # Scalability
-**Scalability（伸缩性）** is a very broad term, used in many different contexts, which relates to the ability of a parallel system (algorithm + code + hardware) to exploit efficiently increasing computational resources
+**Scalability（可扩展性）** is a very broad term, used in many different contexts, which relates to the ability of a parallel system (algorithm + code + hardware) to exploit efficiently increasing computational resources
 ## Hardware scalability
 Does increasing the size of the hardware give increased performance?
 e.g. aggregated memory bandwidth is typically limited as we scale $p$ in shared-memory multiprocessors.

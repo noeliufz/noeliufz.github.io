@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/并行计算-Performance-models.md",
+                "file": "source/_posts/并行计算-并行程序的评估.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/并行计算-Performance-models.md",
+                "file": "source/_posts/并行计算-并行程序的评估.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/并行计算-Performance-models.md",
+                "file": "source/_posts/并行计算-并行程序的评估.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/并行计算-Performance-models.md"
+                "file": "source/_posts/并行计算-并行程序的评估.md"
               }
             }
           }
@@ -158,14 +158,33 @@
   },
   "active": "24d16e4d988cdac7",
   "lastOpenFiles": [
+    "db.json",
+    "public/fonts/微软正黑体.ttf",
+    "public/fonts/TaipeiSansTCBeta-Regular.ttf",
+    "public/fonts",
+    "public/img/nanjing.jpg",
+    "public/img/bg.png",
+    "public/img/hanamura.PNG",
+    "public/img/kingsrow.PNG",
+    "public/img/ow.JPG",
+    "public/img/ow1.PNG",
+    "public/img/selfie.jpg",
+    "public/img/bg.jpg",
+    "public/img/default.png",
+    "public/img/parallel/UMA_NUMA.png",
+    "public/archives/2024/index.html",
+    "public/css/main.css",
+    "public/css/highlight.css",
+    "public/css/highlight-dark.css",
+    "public/css/gitalk.css",
+    "public/css",
+    "public/js/utils.js",
+    "source/_posts/并行计算-Performance-models.md",
+    "source/_posts/并行计算-并行程序的评估.md",
     "source/_posts/并行计算-Introduction.md",
     "source/_posts/并行计算-Performance-models-1.md",
-    "source/_posts/并行计算-Performance-models.md",
     "source/_posts/并行计算-Performance models.md",
     "source/_posts/并行计算-Hardwares.md",
-    "source/img/parallel/Amdahl_2.png",
-    "source/img/parallel/Amdahl_1.png",
-    "source/img/parallel/overheads.png",
     "source/_posts/记第一次帮别人debug-Node-js的经历.md",
     "2024-04-02.md",
     "未命名.canvas",
