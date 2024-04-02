@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "32246d9a1d3dd692",
+    "type": "split",
+    "children": [
+      {
+        "id": "f44ebceae275964a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24d16e4d988cdac7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/并行计算-Performance-models.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7eff52a9e4cccb87",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "source/img/parallel/Amdahl_1.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f9e924f96f4d565f",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b7a507d2089d465",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c7ffd1604072b8e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "48ebb2ac1463634e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#iters",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c9c4080e9122aaaf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "119c38b87befa826",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d17027901bba3dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca474b7aaadc7745",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "source/_posts/并行计算-Performance-models.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9b4c3cd42caf12d2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "source/_posts/并行计算-Performance-models.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "203c822926a0414b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "becb0cc6a9d45233",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "source/_posts/并行计算-Performance-models.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "24d16e4d988cdac7",
+  "lastOpenFiles": [
+    "source/_posts/并行计算-Introduction.md",
+    "source/_posts/并行计算-Performance-models-1.md",
+    "source/_posts/并行计算-Performance-models.md",
+    "source/_posts/并行计算-Performance models.md",
+    "source/_posts/并行计算-Hardwares.md",
+    "source/img/parallel/Amdahl_2.png",
+    "source/img/parallel/Amdahl_1.png",
+    "source/img/parallel/overheads.png",
+    "source/_posts/记第一次帮别人debug-Node-js的经历.md",
+    "2024-04-02.md",
+    "未命名.canvas",
+    "source/_posts/未命名.md"
+  ]
+}

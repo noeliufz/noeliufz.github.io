@@ -1,7 +1,8 @@
 ---
 title: 并行计算-Introduction
 date: 2024-03-26 14:24:04
-tags: 并行计算
+tags:
+  - 并行计算
 math: true
 ---
 # Acknowledgement
@@ -65,7 +66,7 @@ $$
 where ***Q*** # of transistors, ***f*** frequency, ***C*** capacitance, and ***V*** voltage apply. 
 
 #### Dennard's scaling law (until early 2000s)
-According to Dennard's law, if we scale feature size down by a factor of $\dfrac{1}{\kappa}$, we can scale up frequency by $\kappa$, and scale down the capacitance and voltage by $\dfrac{1}{\kappa}$, resulting in a **reduced** power consumptiong of assuming $Q_\kappa = \kappa^2Q_0$ :
+According to Dennard's law, if we scale feature size down by a factor of $\dfrac{1}{\kappa}$, we can scale up frequency by $\kappa$, and scale down the capacitance and voltage by $\dfrac{1}{\kappa}$, resulting in a **reduced** power consumption of assuming $Q_\kappa = \kappa^2Q_0$ :
 $$
 P_0 = Q_0f_0C_0V_0^2\to Q_\kappa f_\kappa C_\kappa V_\kappa^2 = Q_0 (\kappa f_0)(\dfrac{1}{\kappa}C_0)(\dfrac{1}{\kappa}V_0)^2 = (\dfrac{1}{\kappa^2})P_0
 $$
