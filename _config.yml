@@ -98,6 +98,16 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: fluid
+all_minifier: true
+
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 1
+  pngquant: false
+  progressive: false
+  silent: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
