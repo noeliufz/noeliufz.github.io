@@ -89,7 +89,7 @@ perform their best with structured (regular) computations (e.g. image processing
 
 examples: quad-core PC; 2x24-core Xeon CPUS
 
-![SIMD and MIMD](../img/parallel/SIMD_MIMD.png)
+![SIMD and MIMD](/img/parallel/SIMD_MIMD.png)
 
 Most successful model for parallel architectures
 - more general purpose than SIMD, can be built out of off-the-shelf components
@@ -117,4 +117,4 @@ example: QuadCore laptop
 
 #### UMA
 
-![UMA and NUMA](../img/parallel/UMA_NUMA.png)
+![UMA and NUMA](/img/parallel/UMA_NUMA.png)

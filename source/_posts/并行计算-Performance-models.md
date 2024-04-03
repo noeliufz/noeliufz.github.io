@@ -11,21 +11,17 @@ which I have greatly benefited from. Thanks to lecturers Dr. Alberto F. Martin, 
 
 # Parallel Speedup and Efficiency
 **Speedup （加速比）** is a measure of the relative performance between a single and a multiprocessor parallel system when solving a fixed size problem
-{% raw %}
 $$
 S_p=\dfrac{\text{execution time on a single processor}}{\text{execution time using } p \text{ processors}} = \dfrac{t_\text{seq}}{t_\text{par}}
 $$
-{% endraw %}
 $t_\text{seq}$ typically defined as the time for the *fastest* known sequential algorithm, sometimes (but not always) we need a different algorithm for parallelization.
 
 Ideally, $S_p = p$ (aka linear speedup), sometimes also super-linear speed-up ($S_p>p$). Examples: super-linear complexity; cache memory effects
 
 **Efficiency** is a measure of how far we are from ideal speed-up. Defined as:
-{% raw %}
 $$
 E_p=\dfrac{S_p}{p}
 $$
-{% endraw %}
 clearly, $0 < E_p \leq 1$. Optimally, $E_p = 1$
 
 # Parallel Overheads
@@ -35,7 +31,7 @@ Parallelization-related overheads (examples):
 - idling (caused typically by load imbalance, data dependencies, serial parts)
 - excess computation (e.g., higher #iters. with p, communication-avoiding algs)
 
-![Execution time](../img/parallel/overheads.png)
+![Execution time](/img/parallel/overheads.png)
 
 ## Embarrassingly parallel
 A problem that can be solved without communication is called **embarrassingly parallel**. Clearly, will have $E_p \approx 1$ for large $p$.
@@ -73,7 +69,7 @@ $$
 $$
 {% endraw %}
 
-![Amdahl's law](../img/parallel/Amdahl_1.png)![Amdahl's law](../img/parallel/Amdahl_2.png)
+![Amdahl's law](/img/parallel/Amdahl_1.png)![Amdahl's law](/img/parallel/Amdahl_2.png)
 It is a **strong scaling** law, assumeing fixed problem size.
 # Gustafson's Law
 Amdahl's law was thought to show that large $p$ would never pay off, however, it assumes fixed problem size executed on more and more processors. In practice, this is not the case. One typically tailors problem size to $p$ (weak scaling).
