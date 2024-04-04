@@ -1,5 +1,5 @@
 @font-face {
   font-family: "Microsoft JhengHei";
-  src: url("/fonts/MicrosoftJhengHei.ttf");
+  src: url("/fonts/MicrosoftJhengHei-full.subset.ttf") format('truetype'),
   font-weight: 400;
 }
