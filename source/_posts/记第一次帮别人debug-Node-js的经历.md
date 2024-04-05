@@ -1,7 +1,9 @@
 ---
 title: 记第一次帮别人debug Node.js的经历
 date: 2024-03-23 19:44:16
-tags: debug
+tags:
+  - debug
+excerpt: 第一次写Node Js第一次用Electron框架遇到的一些问题
 ---
 学校有门项目课（非常水），接手了上一组的（垃圾）代码，用electron和Node.js写的。
 

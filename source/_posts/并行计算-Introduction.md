@@ -4,6 +4,7 @@ date: 2024-03-26 14:24:04
 tags:
   - 并行计算
 math: true
+excerpt: 并行计算介绍
 ---
 # Acknowledgement
 

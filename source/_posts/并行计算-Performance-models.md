@@ -2,7 +2,9 @@
 title: 并行计算-Performance models
 date: 2024-04-02 17:51:44
 tags:
+  - 并行计算
 math: true
+excerpt: 并行计算性能模型
 ---
 # Acknowledgement
 

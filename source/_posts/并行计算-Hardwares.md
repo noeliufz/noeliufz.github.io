@@ -1,8 +1,10 @@
 ---
 title: 并行计算-Hardware
 date: 2024-03-26 22:59:19
-tags: 并行计算
+tags:
+  - 并行计算
 math: true
+excerpt: 并行计算硬件
 ---
 # Acknowledgement
 
