@@ -1,7 +1,8 @@
 ---
 title: Hexo Fluid主题使用Python库fonttools压缩字体
 date: 2024-04-05 17:38:42
-tags: 
+tags:
+  - 博客搭建
 excerpt: Hexo Fluid主题使用font-spider遇到一些问题，最后选择使用Python库fonttools压缩字体
 ---
 博客想使用第三方字体，奈何字体体积很大，部署后发现加载速度太慢。
@@ -49,12 +50,12 @@ find public -type f -name "*.html" -exec printf -- "--text-file=\"%s\" " {} + | 
   src: url("字体文件.subset.ttf") format('truetype'),  
 }
 ```
-在fluid主题中指定custom css
+在fluid主题设置`_config.fluid.yml`中指定custom css
 ```yml
 custom_css: "./css/custom.css"
 ```
-同样在fluid设置中指定全局字体
-```css
+同样指定全局字体
+```yml
 font:  
   font_size: 16px  
   font_family: 字体家族名
