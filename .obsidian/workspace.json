@@ -13,19 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/并行计算-Performance-models.md",
+                "file": "source/_posts/记第一次帮别人debug-Node-js的经历.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "7eff52a9e4cccb87",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "source/img/parallel/Amdahl_1.png"
               }
             }
           }
@@ -95,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/并行计算-Performance-models.md",
+                "file": "source/_posts/记第一次帮别人debug-Node-js的经历.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/并行计算-Performance-models.md",
+                "file": "source/_posts/记第一次帮别人debug-Node-js的经历.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/并行计算-Performance-models.md"
+                "file": "source/_posts/记第一次帮别人debug-Node-js的经历.md"
               }
             }
           }
@@ -158,37 +148,44 @@
   },
   "active": "24d16e4d988cdac7",
   "lastOpenFiles": [
-    "public/img/nanjing.webp",
-    "public/img/bg.webp",
-    "public/img/selfie.webp",
-    "public/img/default.webp",
-    "public/img/parallel/UMA_NUMA.webp",
-    "public/img/parallel/Amdahl_2.webp",
-    "public/img/parallel/overheads.webp",
-    "public/img/parallel/Amdahl_1.webp",
-    "public/img/parallel/SIMD_MIMD.webp",
-    "public/img/rainbow.webp",
-    "public/img/fluid.webp",
-    "db.json",
-    "public/css/highlight-dark.css",
-    "public/css/main.css",
-    "public/css/gitalk.css",
-    "public/css/highlight.css",
-    "public/archives/2024/index.html",
-    "public/2024/03/26/bing-xing-ji-suan-hardwares/index.html",
-    "public/2024/03/26/bing-xing-ji-suan-introduction/index.html",
-    "public/2024/03/26/bing-xing-ji-suan-hardwares",
-    "public/2024/03/26/bing-xing-ji-suan-introduction",
+    "update.sh",
+    "themes/fluid/source/xml/local-search.xml",
+    "themes/fluid/source/xml",
+    "themes/fluid/source/js/utils.js",
+    "themes/fluid/source/js/plugins.js",
+    "themes/fluid/source/js/local-search.js",
+    "themes/fluid/source/js/leancloud.js",
+    "themes/fluid/source/js/img-lazyload.js",
+    "themes/fluid/source/js/events.js",
+    "themes/fluid/source/js/color-schema.js",
+    "themes/fluid/source/js/boot.js",
+    "themes/fluid/source/img/bg.png",
+    "themes/fluid/source/img/fluid.png",
+    "themes/fluid/source/img/selfie.jpg",
+    "themes/fluid/source/img/rainbow.png",
+    "themes/fluid/source/img/police_beian.png",
+    "themes/fluid/source/img/loading.gif",
+    "themes/fluid/source/img/default.png",
+    "themes/fluid/source/img/avatar.png",
+    "themes/fluid/README_en.md",
+    "themes/fluid/README.md",
+    "source/img/selfie.jpg",
+    "source/img/rainbow.png",
+    "source/about/index.md",
     "source/_posts/记第一次帮别人debug-Node-js的经历.md",
-    "source/_posts/Hexo Fluid主题使用Python库fonttools压缩字体.md",
+    "source/_posts/并行计算-并行程序的评估.md",
     "source/_posts/并行计算-Performance-models.md",
     "source/_posts/并行计算-Introduction.md",
     "source/_posts/并行计算-Hardwares.md",
-    "source/_posts/并行计算-并行程序的评估.md",
+    "source/_posts/Hexo Fluid主题使用Python库fonttools压缩字体.md",
+    "scaffolds/post.md",
+    "scaffolds/page.md",
+    "scaffolds/draft.md",
+    "hello-world.md",
+    "未命名.canvas",
     "source/_posts/并行计算-Performance-models-1.md",
     "source/_posts/并行计算-Performance models.md",
     "2024-04-02.md",
-    "未命名.canvas",
     "source/_posts/未命名.md"
   ]
 }
