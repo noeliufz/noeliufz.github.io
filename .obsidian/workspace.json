@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f44ebceae275964a",
+        "id": "642307bf9b3f1249",
         "type": "tabs",
         "children": [
           {
-            "id": "24d16e4d988cdac7",
+            "id": "d3e067d513f59c6e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/记第一次帮别人debug-Node-js的经历.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/记第一次帮别人debug-Node-js的经历.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/记第一次帮别人debug-Node-js的经历.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "source/_posts/记第一次帮别人debug-Node-js的经历.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "24d16e4d988cdac7",
+  "active": "d3e067d513f59c6e",
   "lastOpenFiles": [
+    "source/_posts/记第一次帮别人debug-Node-js的经历.md",
     "update.sh",
     "themes/fluid/source/xml/local-search.xml",
     "themes/fluid/source/xml",
@@ -158,13 +151,12 @@
     "themes/fluid/source/js/img-lazyload.js",
     "themes/fluid/source/js/events.js",
     "themes/fluid/source/js/color-schema.js",
-    "themes/fluid/source/js/boot.js",
-    "themes/fluid/source/img/bg.png",
-    "themes/fluid/source/img/fluid.png",
     "themes/fluid/source/img/selfie.jpg",
     "themes/fluid/source/img/rainbow.png",
     "themes/fluid/source/img/police_beian.png",
+    "themes/fluid/source/img/bg.png",
     "themes/fluid/source/img/loading.gif",
+    "themes/fluid/source/img/fluid.png",
     "themes/fluid/source/img/default.png",
     "themes/fluid/source/img/avatar.png",
     "themes/fluid/README_en.md",
@@ -172,11 +164,10 @@
     "source/img/selfie.jpg",
     "source/img/rainbow.png",
     "source/about/index.md",
-    "source/_posts/记第一次帮别人debug-Node-js的经历.md",
-    "source/_posts/并行计算-并行程序的评估.md",
     "source/_posts/并行计算-Performance-models.md",
-    "source/_posts/并行计算-Introduction.md",
+    "source/_posts/并行计算-并行程序的评估.md",
     "source/_posts/并行计算-Hardwares.md",
+    "source/_posts/并行计算-Introduction.md",
     "source/_posts/Hexo Fluid主题使用Python库fonttools压缩字体.md",
     "scaffolds/post.md",
     "scaffolds/page.md",
