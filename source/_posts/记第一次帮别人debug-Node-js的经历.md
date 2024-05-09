@@ -119,5 +119,3 @@ window.$ = window.jQuery = require('jquery');
 
 折腾半天终于可以在electron里用一个第三方的日历库显示日历样式。
 
-第一次写Js，但再也不想写Js了。嗯。
-
