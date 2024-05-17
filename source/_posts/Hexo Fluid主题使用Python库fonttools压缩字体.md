@@ -1,5 +1,5 @@
 ---
-title: Hexo Fluid主题使用Python库fonttools压缩字体
+title: Hexo Fluid主题使用Python库fonttools取子集压缩字体
 date: 2024-04-05 17:38:42
 tags:
   - 博客搭建
@@ -15,7 +15,7 @@ excerpt: Hexo Fluid主题使用font-spider遇到一些问题，最后选择使�
 
 fonttools安装
 ```shell
-pip install fonttools
+pip3 install fonttools
 ```
 
 详细使用方法可
