@@ -1,4 +1,10 @@
+/* 微軟正黑
 @font-face {
   font-family: "Microsoft JhengHei";
   src: url("/fonts/MicrosoftJhengHei-full.subset.ttf") format('truetype'),
+}
+*/
+@font-face {
+  font-family: "KingHwa_OldSong";
+  src: url("/fonts/KingHwa-full.subset.ttf") format('truetype'),
 }
