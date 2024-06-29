@@ -224,7 +224,7 @@ color:
 # 主题字体配置
 # Font
 font:
-  font_size: 19px
+  font_size: 18px
   # font_family: Microsoft JhengHei
   font_family: KingHwa_OldSong
   letter_spacing: 0.02em

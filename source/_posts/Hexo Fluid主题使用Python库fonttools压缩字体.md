@@ -1,5 +1,5 @@
 ---
-title: Hexo Fluid主题使用Python库fonttools取子集压缩字体
+title: Hexo使用Python库fonttools取子集压缩字体
 date: 2024-04-05 17:38:42
 tags:
   - 博客搭建
