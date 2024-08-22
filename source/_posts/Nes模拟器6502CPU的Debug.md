@@ -1,5 +1,5 @@
 ---
-title: 定位bug的能力比修bug更重要啊
+title: Nes模拟器6502CPU的Debug
 date: 2024-06-29T10:30:47.000Z
 tags: debug
 ---
@@ -63,6 +63,28 @@ up:
 ```
 
 发现在`sta`之前会先执行`sbc`操作（Substract with Borrow，带借位减法）对寄存器`a`进行更新，检查一下自己`sbc`操作的代码果然有问题！问题在于每次计算完成后调用了一个helper function还会再对carry bit进行一次计算导致寄存器`a`的值异常。改好后就能成功运行啦！蛇的运行也正常了，苹果也都能显示出来了，玩了一会一切正常！
+
+改后长这样
+
+```cpp
+void CPU::SBC(const AddressingMode &mode)
+{
+    // A - M - C̅ -> A
+    uint16_t addr = get_operand_address(mode);
+    uint8_t data = read(addr);
+
+    uint16_t value = static_cast<uint16_t>(data);
+    uint16_t carry_in = get_flag(C) ? 0 : 1;
+    uint16_t result = static_cast<uint16_t>(registers.a) - value - carry_in;
+
+    registers.a = static_cast<uint8_t>(result & 0xFF);
+
+    set_flag(N, registers.a & 0x80);
+    set_flag(Z, registers.a == 0);
+    set_flag(C, result < 0x100);
+    set_flag(V, ((registers.a ^ result) & (registers.a ^ data) & 0x80) != 0);
+}
+```
 
 ![正常运行](/img/nes/normal.png)
 
