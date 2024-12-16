@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Arch Linux安装（自用）</title>
+    <link href="/2024/12/16/an-zhuang-arch-linux/"/>
+    <url>/2024/12/16/an-zhuang-arch-linux/</url>
+    
+    <content type="html"><![CDATA[<h1 id="archlinux安装方法">ArchLinux安装方法</h1><p>制作镜像略</p><h1 id="进入系统后">进入系统后</h1><h2 id="连接网络">连接网络</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sh">iwctl<br>device list<br>station wlan0 scan<br>station wlan0 get-networks<br>station wlan0 connect &lt;name&gt;<br></code></pre></td></tr></table></figure><h2 id="换源">换源</h2><p><code>reflector --country China --latest 10 --sort rate --save /etc/pacman.d/mirrorlist</code></p><p>后续脚本中不再换源</p><h2 id="使用archinstall脚本">使用<code>archinstall</code>脚本</h2><p>注意挂载<code>efi</code>为<code>/boot</code></p><h2 id="出现意外修复grub">（出现意外）修复grub</h2><p>挂载<code>/</code>到<code>/mnt</code>挂载<code>efi</code>为<code>/boot</code></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs sh">mount -t proc /proc /mnt/proc<br>mount --rbind /sys /mnt/sys<br>mount --rbind /dev /mnt/dev<br>mount --rbind /run /mnt/run<br><span class="hljs-comment"># 进入新系统</span><br>arch-chroot /mnt<br>grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB<br>grub-mkconfig -o /boot/grub/grub.cfg<br>efibootmgr --create --disk /dev/nvme0n1p1 --part 1 --label <span class="hljs-string">&quot;Arch&quot;</span> --loader /EFI/GRUB/grubx64.efi<br><span class="hljs-comment"># 最后一句中实际文件是在/boot/EFI/GRUB/grubx64.efi中，但不要加/boot</span><br></code></pre></td></tr></table></figure><h1 id="安装hyprland">安装Hyprland</h1><p>使用已有配置库Hyprdots安装</p><h1 id="关闭内置显示器">关闭内置显示器</h1><p><code>hyprctl keyword monitor "eDP-1,disable"</code><code>hyprctl keyword monitor "HDMI-A-1,1920x1080@75,0x0,1.0”</code></p><h1 id="防止合盖睡眠">防止合盖睡眠</h1><p>修改<code>/etc/systemd/login.conf</code>中<code>HandleLidSwitch</code>系列值为<code>ignore</code></p><h1id="修复hyprland下微信无法使用fcitx5">修复Hyprland下微信无法使用fcitx5</h1><p>arch Linux AUR中已有官方微信<code>wechat-bin</code></p><p>在<code>/etc/environment</code>中添加<code>QT_IM_MODULE=fcitx</code></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Arch</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>虚函数</title>
     <link href="/2024/08/21/xu-han-shu/"/>
     <url>/2024/08/21/xu-han-shu/</url>
